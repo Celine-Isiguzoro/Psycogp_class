@@ -3,7 +3,7 @@ import psycopg2
 # db_conn = psycopg2.connect(
 #     dbname = "sample_database",
 #     user = "postgres",
-#     password = "Nono2365"
+#     password = "Password123"
 # )
 try:
     db_conn = psycopg2.connect(
@@ -50,4 +50,5 @@ cur.execute(
     CURRENT_TIMESTAMP
     ); 
     """) # Two constraints were given to email; it must be unique and not be found empty. Timestamp gives us the time and date in the column, created_at.
+
 # IF NOT EXISTS saves us the stress of removing or commenting out the table. 
